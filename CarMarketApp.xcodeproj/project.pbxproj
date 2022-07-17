@@ -14,6 +14,7 @@
 		E9AA022328844759000570C5 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA022228844759000570C5 /* NetworkingService.swift */; };
 		E9E84F222884498B000F1630 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84F212884498B000F1630 /* Car.swift */; };
 		E9E84F2428844C47000F1630 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84F2328844C47000F1630 /* CarViewModel.swift */; };
+		E9E84F2628844E0F000F1630 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84F2528844E0F000F1630 /* CarListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E9AA022228844759000570C5 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		E9E84F212884498B000F1630 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		E9E84F2328844C47000F1630 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		E9E84F2528844E0F000F1630 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +59,10 @@
 		E9AA021028844551000570C5 /* CarMarketApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9AA021128844551000570C5 /* CarMarketAppApp.swift */,
 				E9AA022128844737000570C5 /* Models */,
 				E9AA022028844730000570C5 /* ViewModels */,
 				E9AA021F28844722000570C5 /* Services */,
-				E9AA021128844551000570C5 /* CarMarketAppApp.swift */,
 				E9AA021328844551000570C5 /* ContentView.swift */,
 				E9AA021528844553000570C5 /* Assets.xcassets */,
 				E9AA021728844553000570C5 /* Preview Content */,
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E84F2328844C47000F1630 /* CarViewModel.swift */,
+				E9E84F2528844E0F000F1630 /* CarListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				E9E84F2428844C47000F1630 /* CarViewModel.swift in Sources */,
 				E9E84F222884498B000F1630 /* Car.swift in Sources */,
 				E9AA021228844551000570C5 /* CarMarketAppApp.swift in Sources */,
+				E9E84F2628844E0F000F1630 /* CarListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

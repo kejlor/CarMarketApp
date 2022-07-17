@@ -20,6 +20,10 @@ protocol NetworkService {
 }
 
 class Webservice: NetworkService {
+    
+    private init() { }
+    static var shared = Webservice()
+    
     func downloadData<T: Decodable>(of type: T.Type, from url: URL, completion: @escaping (Result<T, DataError>) -> Void) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
