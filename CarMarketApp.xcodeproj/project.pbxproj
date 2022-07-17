@@ -12,6 +12,8 @@
 		E9AA021628844553000570C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AA021528844553000570C5 /* Assets.xcassets */; };
 		E9AA021928844553000570C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AA021828844553000570C5 /* Preview Assets.xcassets */; };
 		E9AA022328844759000570C5 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA022228844759000570C5 /* NetworkingService.swift */; };
+		E9E84F222884498B000F1630 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84F212884498B000F1630 /* Car.swift */; };
+		E9E84F2428844C47000F1630 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84F2328844C47000F1630 /* CarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		E9AA021528844553000570C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9AA021828844553000570C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9AA022228844759000570C5 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		E9E84F212884498B000F1630 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E9E84F2328844C47000F1630 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		E9AA022028844730000570C5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E9E84F2328844C47000F1630 /* CarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 		E9AA022128844737000570C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E9E84F212884498B000F1630 /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			files = (
 				E9AA022328844759000570C5 /* NetworkingService.swift in Sources */,
 				E9AA021428844551000570C5 /* ContentView.swift in Sources */,
+				E9E84F2428844C47000F1630 /* CarViewModel.swift in Sources */,
+				E9E84F222884498B000F1630 /* Car.swift in Sources */,
 				E9AA021228844551000570C5 /* CarMarketAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
