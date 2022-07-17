@@ -8,7 +8,7 @@
 import Foundation
 
 class CarListViewModel: ObservableObject {
-    @Published var cars: [Car] = []
+    @Published var cars: [CarViewModel] = []
     
     func getCars() {
         guard let url = URL(string: "https://tinuon.net/api/cars") else { return }
@@ -19,7 +19,7 @@ class CarListViewModel: ObservableObject {
                 print(error.localizedDescription)
             case .success(let cars):
                 DispatchQueue.main.async {
-                    self.cars = cars
+                    self.cars = cars.map(CarViewModel.init)
                 }
             }
         }
