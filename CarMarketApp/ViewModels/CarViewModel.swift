@@ -18,6 +18,10 @@ struct CarViewModel {
         car.carId
     }
     
+    var availability: Int {
+        car.availability
+    }
+    
     var mark: String {
         car.mark
     }
@@ -46,11 +50,11 @@ struct CarViewModel {
         car.priceInPln
     }
     
-    var createdAt: Date {
+    var createdAt: String {
         car.createdAt
     }
     
-    var updatedAt: Date {
+    var updatedAt: String {
         car.updatedAt
     }
 }
