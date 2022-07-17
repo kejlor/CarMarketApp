@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("selectedTab") private var selectedTab = 0
+    
     var body: some View {
-        VStack {
-            CarListView()
+        ZStack {
+            TabView(selection: $selectedTab) {
+                HomeView()
+                    .tag(0)
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                            .font(.largeTitle)
+                    }
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
