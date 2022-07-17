@@ -16,7 +16,7 @@ struct Car: Codable {
     let productionDate: Int
     let vin: String
     let priceInUsd: Double
-    let priceInPln: Date
+    let priceInPln: Double
     let avaibility: Bool
     let createdAt: Date
     let updatedAt: Date
