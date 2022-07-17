@@ -18,7 +18,7 @@ struct CarViewModel {
         car.carId
     }
     
-    var availability: Int {
+    var availability: Bool {
         car.availability
     }
     
