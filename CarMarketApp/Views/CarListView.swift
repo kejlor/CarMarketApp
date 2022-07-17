@@ -11,16 +11,19 @@ struct CarListView: View {
     @StateObject private var carListVM = CarListViewModel()
     
     var body: some View {
-        List {
-            ForEach(carListVM.cars, id: \.id) { car in
-                VStack {
-                    Text(car.model)
-                    Text(car.mark)
-                }
+        NavigationView {
+            List {
+                    ForEach(carListVM.filteredCars, id: \.id) { car in
+                        VStack {
+                            CarCell(car: car)
+                        }
+                    }
             }
-        }
-        .onAppear {
-            carListVM.getCars()
+            .listStyle(PlainListStyle())
+            .onAppear {
+                carListVM.getCars()
+            }
+            .navigationTitle("Car Market App")
         }
     }
 }
@@ -28,5 +31,21 @@ struct CarListView: View {
 struct CarListView_Previews: PreviewProvider {
     static var previews: some View {
         CarListView()
+    }
+}
+
+struct CarCell: View {
+    let car: CarViewModel
+    
+    var body: some View {
+        VStack {
+            Text("\(car.mark) \(car.model)")
+                .font(.title3)
+            Group {
+                Text("Price USD: \(car.priceInUsd.asNumberString()) $")
+                Text("Price PLN: \(car.priceInPln.asNumberString()) zł")
+            }
+            .font(.caption)
+        }
     }
 }
