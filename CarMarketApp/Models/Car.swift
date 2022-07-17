@@ -8,7 +8,7 @@
 import Foundation
 
 struct Car: Codable {
-    var id: Int
+    let id: Int
     let carId: Int
     let mark: String
     let model: String
@@ -17,12 +17,14 @@ struct Car: Codable {
     let vin: String
     let priceInUsd: Double
     let priceInPln: Double
-    let avaibility: Bool
-    let createdAt: Date
-    let updatedAt: Date
+    let availability: Int
+    let createdAt: String
+    let updatedAt: String
     
     enum CodingKeys: String, CodingKey {
-        case id, carId, mark, model, color, vin, avaibility
+        case id, mark, model, color, vin
+        case carId = "car_id"
+        case availability
         case productionDate = "production_date"
         case priceInUsd = "price_in_usd"
         case priceInPln = "price_in_pln"
